@@ -5,16 +5,16 @@ import pandas as pd
 
 from typing import List
 
-"""
-Função para ler os arquivos de uma pasta data/input e 
-retornar uma lista de dataframes
-
-args: input_path (str): caminho da pastas com os arquivos
-
-return: list: Lista de dataframes
-"""
-
 def ler_arquivos_excel(input_path: str) -> List[pd.DataFrame]:
+
+    """
+    Função para ler os arquivos de uma pasta data/input e 
+    retornar uma lista de dataframes
+
+    args: input_path (str): caminho da pastas com os arquivos
+
+    return: list: Lista de dataframes
+    """
     
     files = glob.glob(os.path.join(input_path, "*.xlsx"))
     
