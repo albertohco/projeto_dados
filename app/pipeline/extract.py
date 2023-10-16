@@ -10,7 +10,7 @@ import pandas as pd
 def ler_arquivos_excel(input_path: str) -> List[pd.DataFrame]:
     """
     Função para ler os arquivos de uma pasta data/input e retornar uma lista de dataframes.
-    
+
     args: input_path (str): caminho da pastas com os arquivos
     return: list: Lista de dataframes
     """
@@ -23,6 +23,7 @@ def ler_arquivos_excel(input_path: str) -> List[pd.DataFrame]:
         dataframes.append(df)
 
     return dataframes
+
 
 if __name__ == '__main__':
     path = 'app/data/input'
